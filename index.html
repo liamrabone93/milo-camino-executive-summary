@@ -158,23 +158,13 @@ h1 .hl{color:var(--rust-lt)}
 
 /* ─── TRUST ─── */
 #trust{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-3) 100%);border-top:1px solid var(--panel-line);border-bottom:1px solid var(--panel-line)}
-.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:26px}
-.trust-card{border-radius:16px;padding:26px 26px 24px;border:1px solid var(--panel-line)}
-.trust-card.milo{background:linear-gradient(150deg,rgba(173,75,38,.18),rgba(173,75,38,.05));border-color:rgba(173,75,38,.45)}
-.trust-card.tenzo{background:var(--panel)}
-.trust-card h4{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
-.trust-card.milo h4{color:var(--rust-lt)}
-.trust-card.tenzo h4{color:var(--dim)}
-.trust-card .who{font-size:1.1rem;font-weight:600;color:var(--paper);margin-bottom:18px}
-.cert{display:flex;align-items:flex-start;gap:11px;padding:10px 0;border-top:1px solid rgba(236,224,208,.08);font-size:.88rem}
-.cert:first-of-type{border-top:none}
-.cert .mark{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:800;margin-top:1px}
-.cert .mark.yes{background:rgba(127,168,122,.2);color:#8fa06b;border:1px solid rgba(127,168,122,.5)}
-.cert .mark.no{background:rgba(236,224,208,.06);color:var(--dim);border:1px solid rgba(236,224,208,.18)}
+.cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;background:linear-gradient(150deg,rgba(173,75,38,.16),rgba(173,75,38,.04));border:1px solid rgba(173,75,38,.42);border-radius:16px;padding:14px 28px;margin-bottom:26px}
+.cert{display:flex;align-items:flex-start;gap:12px;padding:15px 0;border-top:1px solid rgba(236,224,208,.1);font-size:.9rem}
+.cert-grid .cert:nth-child(1),.cert-grid .cert:nth-child(2){border-top:none}
+.cert .mark{width:21px;height:21px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.64rem;font-weight:800;margin-top:1px;background:rgba(127,168,122,.2);color:#8fa06b;border:1px solid rgba(127,168,122,.5)}
 .cert .ct{line-height:1.4}
-.cert .ct strong{color:var(--paper);font-weight:600;display:block}
-.cert .ct span{color:var(--muted);font-size:.78rem}
-.cert.faded strong{color:var(--muted)}
+.cert .ct strong{color:var(--paper);font-weight:600;display:block;margin-bottom:2px}
+.cert .ct span{color:var(--muted);font-size:.79rem}
 .trust-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:var(--navy-2);border:1px solid var(--panel-line);border-radius:14px;padding:20px 24px}
 .trust-cta-txt{flex:1;min-width:220px}
 .trust-cta-txt strong{color:var(--paper);font-weight:600;font-size:.95rem}
@@ -182,18 +172,6 @@ h1 .hl{color:var(--rust-lt)}
 .trust-btn{display:inline-flex;align-items:center;gap:9px;background:var(--rust);color:var(--paper);border-radius:999px;padding:12px 26px;font-size:.88rem;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .18s,transform .18s}
 .trust-btn:hover{background:var(--rust-lt);transform:scale(1.03)}
 .trust-btn:focus-visible{outline:2px solid var(--tan);outline-offset:3px}
-.trust-note{font-size:.72rem;color:var(--dim);line-height:1.6;margin-top:18px;max-width:640px}
-
-/* ─── COMPARISON ─── */
-.cmp-wrap{border:1px solid var(--panel-line);border-radius:14px;overflow:hidden;background:var(--navy-2)}
-.cmp-scroll{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:520px}
-thead th{padding:13px 18px;text-align:left;font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);border-bottom:1px solid var(--panel-line)}
-thead th.mc{color:var(--rust-lt);background:rgba(173,75,38,.1)}
-tbody td{padding:13px 18px;border-bottom:1px solid rgba(236,224,208,.07);color:var(--muted);vertical-align:top}
-tbody td.fc{font-weight:600;color:var(--paper)}
-tbody td.mc{color:var(--cream);background:rgba(173,75,38,.07)}
-tbody tr:last-child td{border-bottom:none}
 
 /* ─── NEXT STEPS ─── */
 .ns-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -215,7 +193,7 @@ tbody tr:last-child td{border-bottom:none}
 #cta{padding:88px 60px 72px;text-align:center;
   background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(173,75,38,.2) 0%,transparent 66%);
   border-top:1px solid var(--panel-line)}
-#cta h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:400;margin-bottom:14px;line-height:1.15;text-wrap:balance}
+#cta h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:400;margin-bottom:26px;line-height:1.15;text-wrap:balance}
 #cta p.lead{font-size:.97rem;color:var(--muted);max-width:540px;margin:0 auto 34px;line-height:1.75}
 .cta-btn{display:inline-block;background:var(--rust);color:var(--paper);border:none;border-radius:999px;
   padding:14px 38px;font-size:.95rem;font-weight:600;text-decoration:none;font-family:inherit;
@@ -230,7 +208,8 @@ tbody tr:last-child td{border-bottom:none}
   #hero{padding:36px 24px 56px;min-height:auto}
   .section,.demo-inner,.demo-head,#cta{padding-left:24px;padding-right:24px}
   .lockup{flex-direction:column;align-items:flex-start;gap:16px;padding-bottom:40px}
-  .feat-grid,.delivery,.ns-grid,.trust-grid{grid-template-columns:1fr}
+  .feat-grid,.delivery,.ns-grid,.cert-grid{grid-template-columns:1fr}
+  .cert-grid .cert:nth-child(2){border-top:1px solid rgba(236,224,208,.1)}
   h1{font-size:2.2rem}
 }
 </style>
@@ -392,29 +371,16 @@ tbody tr:last-child td{border-bottom:none}
 <section id="trust">
   <div class="section reveal">
     <div class="sec-label">Trust &amp; Security</div>
-    <div class="sec-title display">Where Milo and Tenzo genuinely differ.</div>
-    <div class="sec-sub">For an FD, tooling has to clear the security bar before anything else matters. This is the clearest, most concrete gap between the two, and it is all in writing.</div>
+    <div class="sec-title display">Certified, and built read-only.</div>
+    <div class="sec-sub">For an FD, tooling has to clear the security bar before anything else matters. Milo is independently certified, connects read-only, and every credential is documented and open for your team to review.</div>
 
-    <div class="trust-grid">
-      <div class="trust-card milo">
-        <h4>Milo</h4>
-        <div class="who">Independently certified</div>
-        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>SOC 2 Type II</strong><span>Independently audited controls over security and availability</span></span></div>
-        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>ISO 27001</strong><span>Certified information security management system</span></span></div>
-        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>GDPR compliant</strong><span>UK and EU data protection</span></span></div>
-        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>Read-only connections, role-based access</strong><span>Milo reads your data, never writes to it, and each person sees only their remit</span></span></div>
-        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>Public trust centre</strong><span>Certifications, sub-processors and policies, available to review now</span></span></div>
-      </div>
-
-      <div class="trust-card tenzo">
-        <h4>Tenzo</h4>
-        <div class="who">Publicly published standards</div>
-        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>SOC 2 Type II</strong><span>Not published on gotenzo.com</span></span></div>
-        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>ISO 27001</strong><span>Not published on gotenzo.com</span></span></div>
-        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>GDPR</strong><span>Referenced in the site footer</span></span></div>
-        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>Access model</strong><span>Not publicly detailed</span></span></div>
-        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>Trust centre</strong><span>None found publicly</span></span></div>
-      </div>
+    <div class="cert-grid">
+      <div class="cert"><span class="mark">✓</span><span class="ct"><strong>SOC 2 Type II</strong><span>Independently audited controls over security and availability</span></span></div>
+      <div class="cert"><span class="mark">✓</span><span class="ct"><strong>ISO 27001</strong><span>Certified information security management system</span></span></div>
+      <div class="cert"><span class="mark">✓</span><span class="ct"><strong>GDPR compliant</strong><span>UK and EU data protection, built in</span></span></div>
+      <div class="cert"><span class="mark">✓</span><span class="ct"><strong>Read-only connections</strong><span>Milo reads your data and never writes back to your systems</span></span></div>
+      <div class="cert"><span class="mark">✓</span><span class="ct"><strong>Role-based access</strong><span>Each person sees only their remit, from executives to site GMs</span></span></div>
+      <div class="cert"><span class="mark">✓</span><span class="ct"><strong>Your data stays yours</strong><span>Never used to train external models</span></span></div>
     </div>
 
     <div class="trust-cta">
@@ -424,36 +390,8 @@ tbody tr:last-child td{border-bottom:none}
       </div>
       <a class="trust-btn" href="https://trust.milo.ai/" target="_blank" rel="noopener">View Milo's Trust Centre →</a>
     </div>
-
-    <p class="trust-note">Comparison reflects what each company publishes publicly on its own website (gotenzo.com) as of July 2026. It describes published information, not a statement about Tenzo's internal controls. Note there is a separate, unrelated company at tenzo.ai in AI recruiting; the hospitality analytics product is Tenzo at gotenzo.com.</p>
   </div>
 </section>
-
-<!-- ── AT A GLANCE ── -->
-<div class="section reveal">
-  <div class="sec-label">At a Glance</div>
-  <div class="sec-title display">Milo alongside the current setup.</div>
-  <div class="sec-sub">Based on what we discussed in the room, and worth checking against your own experience of Tenzo.</div>
-  <div class="cmp-wrap">
-    <div class="cmp-scroll">
-      <table>
-        <thead><tr>
-          <th style="width:26%">Capability</th>
-          <th style="width:36%">Tenzo</th>
-          <th class="mc" style="width:38%">Milo</th>
-        </tr></thead>
-        <tbody>
-          <tr><td class="fc">Interface</td><td>Dashboards and set reports</td><td class="mc">Ask in plain English, like ChatGPT or Claude</td></tr>
-          <tr><td class="fc">Marketing tied to revenue</td><td>Marketing sits outside its scope</td><td class="mc">Spend joined to covers and revenue, by campaign and site</td></tr>
-          <tr><td class="fc">Operational data</td><td>Core strength: sales, covers, labour</td><td class="mc">Covered, and joined to marketing and finance</td></tr>
-          <tr><td class="fc">Cost and margin</td><td>Sales and labour focused</td><td class="mc">Supplier prices, food waste and COGS creep, flagged early</td></tr>
-          <tr><td class="fc">Delivery</td><td>Log in to view</td><td class="mc">Slack, WhatsApp, email and web, automated</td></tr>
-          <tr><td class="fc">Onboarding</td><td>Training required</td><td class="mc">Familiar from day one</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
 
 <!-- ── NEXT STEPS ── -->
 <div class="section reveal" style="padding-top:0">
@@ -478,8 +416,6 @@ tbody tr:last-child td{border-bottom:none}
 <!-- ── CTA ── -->
 <section id="cta" class="reveal">
   <h2 class="display">See it answer your questions,<br>not ours.</h2>
-  <p class="lead">Thirty minutes on a comparable stack, with your marketing director in the room if that helps. We'll show marketing spend joined to revenue, and the same across supply chain and EPOS.</p>
-  <a class="cta-btn" href="mailto:liam@milo.ai?subject=Milo%20for%20Camino%20Restaurants">Book a walkthrough</a>
   <p class="contact-line">Liam Rabone · <a href="mailto:liam@milo.ai">liam@milo.ai</a> · 21 July 2026</p>
   <p class="footer-mark">Milo is an Autonomous Minds product &nbsp;·&nbsp; SOC 2 Type II &nbsp;·&nbsp; ISO 27001 &nbsp;·&nbsp; GDPR</p>
 </section>
