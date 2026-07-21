@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Milo × Camino — Executive Summary</title>
+<title>Milo for Camino Restaurants</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 :root{
   /* Camino palette, taken from camino.uk.com */
-  --navy:#0c1b2a;      /* site ground */
+  --navy:#0c1b2a;
   --navy-2:#112336;
   --navy-3:#0a1622;
   --olive:#464735;
-  --cream:#ece0d0;     /* logo + body text */
+  --cream:#ece0d0;
   --tan:#cab99e;
   --paper:#f1f2ea;
-  --rust:#ad4b26;      /* accent */
+  --rust:#ad4b26;
   --rust-lt:#c96a41;
   --panel:rgba(236,224,208,.055);
   --panel-line:rgba(236,224,208,.14);
@@ -74,7 +74,7 @@ body{
 h1{font-size:clamp(2.4rem,5.4vw,4rem);font-weight:400;line-height:1.04;letter-spacing:.005em;margin-bottom:20px;text-wrap:balance}
 h1 .w{display:inline-block;margin-right:.22em;opacity:0;animation:wordBlur .8s cubic-bezier(.16,1,.3,1) both}
 h1 .hl{color:var(--rust-lt)}
-.hero-sub{font-size:1.02rem;color:var(--muted);max-width:600px;margin:0 auto;line-height:1.75;opacity:0;animation:fadeUp .7s 1.4s cubic-bezier(.16,1,.3,1) both}
+.hero-sub{font-size:1.02rem;color:var(--muted);max-width:620px;margin:0 auto;line-height:1.75;opacity:0;animation:fadeUp .7s 1.4s cubic-bezier(.16,1,.3,1) both}
 
 /* ─── TICKER ─── */
 .ticker-wrap{background:var(--navy-3);border-top:1px solid rgba(173,75,38,.22);border-bottom:1px solid rgba(173,75,38,.22);padding:12px 0;overflow:hidden}
@@ -87,17 +87,7 @@ h1 .hl{color:var(--rust-lt)}
 .section{padding:76px 60px;max-width:900px;margin:0 auto}
 .sec-label{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rust-lt);margin-bottom:10px}
 .sec-title{font-size:clamp(1.7rem,3.2vw,2.3rem);font-weight:400;line-height:1.15;margin-bottom:12px;text-wrap:balance}
-.sec-sub{font-size:.95rem;color:var(--muted);max-width:620px;line-height:1.75;margin-bottom:34px}
-
-/* ─── OUTCOME ─── */
-.outcome{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;
-  background:linear-gradient(135deg,rgba(173,75,38,.13),rgba(70,71,53,.18));
-  border:1px solid rgba(173,75,38,.3);border-left:3px solid var(--rust);border-radius:14px;padding:26px 28px}
-.outcome-stamp{font-size:.64rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rust-lt);
-  border:1px solid rgba(173,75,38,.45);border-radius:6px;padding:6px 11px;white-space:nowrap;margin-top:3px}
-.outcome p{font-size:.92rem;color:var(--muted);line-height:1.7}
-.outcome p+p{margin-top:10px}
-.outcome strong{color:var(--paper);font-weight:600}
+.sec-sub{font-size:.95rem;color:var(--muted);max-width:640px;line-height:1.75;margin-bottom:34px}
 
 /* ─── FEATURE GRID ─── */
 .feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
@@ -107,21 +97,14 @@ h1 .hl{color:var(--rust-lt)}
 .feat-card h4{font-size:1rem;font-weight:600;margin-bottom:8px;color:var(--paper)}
 .feat-card p{font-size:.85rem;color:var(--muted);line-height:1.7}
 
-/* ─── MARKETING GAP ─── */
-.gap-panel{background:rgba(70,71,53,.28);border:1px solid rgba(202,185,158,.2);border-radius:14px;padding:26px 28px;margin-bottom:26px}
-.gap-panel h4{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tan);margin-bottom:10px}
-.gap-panel p{font-size:.92rem;color:var(--muted);line-height:1.75}
-.gap-panel p+p{margin-top:10px}
-.gap-panel strong{color:var(--paper);font-weight:600}
-
-.channel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:34px}
-.channel{border:1px solid var(--panel-line);border-radius:12px;padding:18px 20px;background:var(--panel)}
-.channel h5{font-size:.9rem;font-weight:600;color:var(--paper);margin-bottom:5px}
-.channel .tick{color:var(--rust-lt);font-weight:700;margin-right:7px}
-.channel p{font-size:.82rem;color:var(--muted);line-height:1.6}
-
-.ask-list{border-left:2px solid rgba(173,75,38,.5);padding-left:20px;display:flex;flex-direction:column;gap:12px}
-.ask-list p{font-size:1rem;font-weight:400;color:var(--cream);line-height:1.5;font-style:italic}
+/* ─── QUERY GROUPS ─── */
+.qgroup{display:grid;gap:16px}
+.qcat{background:rgba(70,71,53,.22);border:1px solid var(--panel-line);border-radius:14px;padding:24px 26px}
+.qcat-head{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.qcat-head h4{font-size:1.02rem;font-weight:600;color:var(--paper)}
+.qcat-head span{font-size:.72rem;color:var(--tan);font-weight:500}
+.ask-list{border-left:2px solid rgba(173,75,38,.5);padding-left:20px;display:flex;flex-direction:column;gap:11px}
+.ask-list p{font-size:.96rem;font-weight:400;color:var(--cream);line-height:1.5;font-style:italic}
 
 /* ─── DEMO ─── */
 #demo{padding:0 0 76px}
@@ -173,6 +156,34 @@ h1 .hl{color:var(--rust-lt)}
 .d-dot{width:8px;height:8px;border-radius:50%;background:var(--rust);flex-shrink:0;animation:emberGlow 3s ease-in-out infinite}
 .d-card p{font-size:.81rem;color:var(--muted);line-height:1.6}
 
+/* ─── TRUST ─── */
+#trust{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-3) 100%);border-top:1px solid var(--panel-line);border-bottom:1px solid var(--panel-line)}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:26px}
+.trust-card{border-radius:16px;padding:26px 26px 24px;border:1px solid var(--panel-line)}
+.trust-card.milo{background:linear-gradient(150deg,rgba(173,75,38,.18),rgba(173,75,38,.05));border-color:rgba(173,75,38,.45)}
+.trust-card.tenzo{background:var(--panel)}
+.trust-card h4{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.trust-card.milo h4{color:var(--rust-lt)}
+.trust-card.tenzo h4{color:var(--dim)}
+.trust-card .who{font-size:1.1rem;font-weight:600;color:var(--paper);margin-bottom:18px}
+.cert{display:flex;align-items:flex-start;gap:11px;padding:10px 0;border-top:1px solid rgba(236,224,208,.08);font-size:.88rem}
+.cert:first-of-type{border-top:none}
+.cert .mark{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:800;margin-top:1px}
+.cert .mark.yes{background:rgba(127,168,122,.2);color:#8fa06b;border:1px solid rgba(127,168,122,.5)}
+.cert .mark.no{background:rgba(236,224,208,.06);color:var(--dim);border:1px solid rgba(236,224,208,.18)}
+.cert .ct{line-height:1.4}
+.cert .ct strong{color:var(--paper);font-weight:600;display:block}
+.cert .ct span{color:var(--muted);font-size:.78rem}
+.cert.faded strong{color:var(--muted)}
+.trust-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;background:var(--navy-2);border:1px solid var(--panel-line);border-radius:14px;padding:20px 24px}
+.trust-cta-txt{flex:1;min-width:220px}
+.trust-cta-txt strong{color:var(--paper);font-weight:600;font-size:.95rem}
+.trust-cta-txt p{font-size:.82rem;color:var(--muted);margin-top:3px}
+.trust-btn{display:inline-flex;align-items:center;gap:9px;background:var(--rust);color:var(--paper);border-radius:999px;padding:12px 26px;font-size:.88rem;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .18s,transform .18s}
+.trust-btn:hover{background:var(--rust-lt);transform:scale(1.03)}
+.trust-btn:focus-visible{outline:2px solid var(--tan);outline-offset:3px}
+.trust-note{font-size:.72rem;color:var(--dim);line-height:1.6;margin-top:18px;max-width:640px}
+
 /* ─── COMPARISON ─── */
 .cmp-wrap{border:1px solid var(--panel-line);border-radius:14px;overflow:hidden;background:var(--navy-2)}
 .cmp-scroll{overflow-x:auto}
@@ -205,7 +216,7 @@ tbody tr:last-child td{border-bottom:none}
   background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(173,75,38,.2) 0%,transparent 66%);
   border-top:1px solid var(--panel-line)}
 #cta h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:400;margin-bottom:14px;line-height:1.15;text-wrap:balance}
-#cta p.lead{font-size:.97rem;color:var(--muted);max-width:520px;margin:0 auto 34px;line-height:1.75}
+#cta p.lead{font-size:.97rem;color:var(--muted);max-width:540px;margin:0 auto 34px;line-height:1.75}
 .cta-btn{display:inline-block;background:var(--rust);color:var(--paper);border:none;border-radius:999px;
   padding:14px 38px;font-size:.95rem;font-weight:600;text-decoration:none;font-family:inherit;
   transition:background .18s,transform .18s;margin-bottom:34px}
@@ -219,8 +230,7 @@ tbody tr:last-child td{border-bottom:none}
   #hero{padding:36px 24px 56px;min-height:auto}
   .section,.demo-inner,.demo-head,#cta{padding-left:24px;padding-right:24px}
   .lockup{flex-direction:column;align-items:flex-start;gap:16px;padding-bottom:40px}
-  .feat-grid,.channel-grid,.delivery,.ns-grid{grid-template-columns:1fr}
-  .outcome{grid-template-columns:1fr;gap:14px}
+  .feat-grid,.delivery,.ns-grid,.trust-grid{grid-template-columns:1fr}
   h1{font-size:2.2rem}
 }
 </style>
@@ -242,91 +252,92 @@ tbody tr:last-child td{border-bottom:none}
 
   <div class="hero-content">
     <h1 class="display" id="h1"></h1>
-    <p class="hero-sub">A short record of what we discussed, where Milo differs from Tenzo — particularly on marketing data — and what we each agreed to do next.</p>
+    <p class="hero-sub">The question a finance director asks marketing is never how many likes. It is what the spend returned. Milo joins every campaign to the covers and revenue it drove, then does the same across supply chain, EPOS and margin. Plain English in, the number back in seconds.</p>
   </div>
 </section>
 
 <!-- ── TICKER ── -->
 <div class="ticker-wrap"><div class="ticker-track" id="ticker"></div></div>
 
-<!-- ── OUTCOME ── -->
+<!-- ── WHAT MILO DOES ── -->
 <div class="section reveal">
-  <div class="sec-label">Outcome</div>
-  <div class="sec-title display">Where we landed.</div>
-  <div class="outcome">
-    <div class="outcome-stamp">Not now</div>
-    <div>
-      <p><strong>No change planned for the time being.</strong> Camino is settled with its current setup and there is no live project to attach Milo to.</p>
-      <p>That said, several differentiators landed clearly — particularly the marketing side, which the current reporting stack doesn't reach. Tyrone was open to picking this up again when the timing suits, and the trust and security documentation is going over in the meantime.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ── DIFFERENTIATORS ── -->
-<div class="section reveal" style="padding-top:0">
-  <div class="sec-label">What Resonated</div>
-  <div class="sec-title display">Four things that separate Milo from Tenzo.</div>
-  <div class="sec-sub">These were the points Tyrone engaged with most in the room.</div>
+  <div class="sec-label">What Milo Does</div>
+  <div class="sec-title display">Built for the whole business, not one team.</div>
+  <div class="sec-sub">The points that matter to a finance director: marketing spend proven in revenue, costs watched, and one place to ask across all of it.</div>
   <div class="feat-grid">
     <div class="feat-card">
-      <div class="feat-num">Familiarity</div>
-      <h4>A tool the team already knows how to use</h4>
-      <p>Milo works the way Claude and ChatGPT do — you ask a question in plain English and get an answer back. Your teams are already using tools like this day to day, so there's no dashboard training curve and onboarding is quick.</p>
+      <div class="feat-num">Plain English</div>
+      <h4>Ask it like you'd ask a colleague</h4>
+      <p>Milo works the way Claude and ChatGPT do. You type a question and get an answer back, with no dashboards to learn and no SQL. Anyone on the team can use it from day one.</p>
     </div>
     <div class="feat-card">
-      <div class="feat-num">Coverage</div>
-      <h4>Marketing analysis well beyond Tenzo</h4>
-      <p>Milo reads Meta, Instagram, TikTok and YouTube alongside your trading data. This is the clearest gap in the current setup and the strongest single reason for the marketing team to want it.</p>
+      <div class="feat-num">Marketing to revenue</div>
+      <h4>Every campaign, tied to what it made</h4>
+      <p>Not likes and reach. Milo joins paid social and email spend to the covers and revenue it drove, by campaign and by site, so marketing and finance are finally looking at the same number.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-num">Whole business</div>
+      <h4>One view across every corner</h4>
+      <p>Marketing, EPOS, supplier costs, labour and finance in one place. Ask across all of it in a single question, instead of stitching exports together in a spreadsheet.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-num">Cost and margin</div>
+      <h4>COGS and margin, watched for you</h4>
+      <p>Milo flags supplier price rises, food waste and margin creep before month end, and pushes an alert the moment a site slips. The things that quietly cost money, caught early.</p>
     </div>
     <div class="feat-card">
       <div class="feat-num">Distribution</div>
-      <h4>Automations that go to the people who need them</h4>
-      <p>Scheduled reports and alerts pushed automatically to GMs, owners and investors over Slack, WhatsApp and email. Nobody has to log in, build a report, or chase anyone for numbers.</p>
+      <h4>Answers reach the people who need them</h4>
+      <p>Scheduled reports and alerts to GMs, owners and investors over Slack, WhatsApp and email. Nobody logs in, builds a report, or chases anyone for numbers.</p>
     </div>
     <div class="feat-card">
       <div class="feat-num">Assurance</div>
-      <h4>Security and data handling, documented</h4>
-      <p>Milo is SOC 2 Type II certified, ISO 27001 certified and GDPR compliant, with trust documentation setting out how Camino's data would be stored, accessed and protected — read-only connections and role-based access throughout.</p>
+      <h4>Certified, and built read-only</h4>
+      <p>SOC 2 Type II, ISO 27001 and GDPR, with read-only connections and role-based access throughout. The full picture is in the trust centre, linked below.</p>
     </div>
   </div>
 </div>
 
-<!-- ── MARKETING GAP ── -->
+<!-- ── EXAMPLE QUERIES ── -->
 <div class="section reveal" style="padding-top:0">
-  <div class="sec-label">The Biggest Gap</div>
-  <div class="sec-title display">Marketing data — where the current setup runs out.</div>
+  <div class="sec-label">One Question Away</div>
+  <div class="sec-title display">The questions Camino could ask on day one.</div>
+  <div class="sec-sub">Real examples across the business. The same plain-English box, whether it is a marketing spend question, a supplier one, or a margin one.</div>
+  <div class="qgroup">
 
-  <div class="gap-panel">
-    <h4>The problem today</h4>
-    <p>Tenzo is built around <strong>operational and labour data</strong> — sales, covers, scheduling, forecasting. It does that job, but it was never designed to read your marketing channels.</p>
-    <p>So marketing sits outside the reporting stack entirely: someone exports from Meta, someone else checks Instagram and TikTok natively, YouTube is looked at separately, and none of it lines up against trading data without manual work in a spreadsheet. The question <em>"what did that campaign actually do to covers?"</em> takes a person a morning to answer, if it gets answered at all.</p>
-  </div>
+    <div class="qcat">
+      <div class="qcat-head"><h4>Marketing &amp; revenue</h4><span>what the spend actually returned</span></div>
+      <div class="ask-list">
+        <p>"What did we spend on Instagram and TikTok ads last month by site, and what revenue can we actually tie back to it?"</p>
+        <p>"Show me covers and revenue from the Instagram promo code against the ad spend that drove it."</p>
+        <p>"Which is giving us better return per site, TikTok or Instagram?"</p>
+        <p>"Did the flamenco night TikTok push actually move covers at Shoreditch versus Farringdon, or would we have got them anyway?"</p>
+        <p>"What's our blended acquisition cost from paid social versus our email list?"</p>
+      </div>
+    </div>
 
-  <div class="channel-grid">
-    <div class="channel">
-      <h5><span class="tick">✓</span>Meta &amp; Instagram</h5>
-      <p>Paid and organic in one place — spend, reach, engagement and return, split by site or campaign.</p>
+    <div class="qcat">
+      <div class="qcat-head"><h4>Supply chain &amp; cost</h4><span>where the money quietly leaks</span></div>
+      <div class="ask-list">
+        <p>"Which supplier has put prices up the most on our top 10 ingredients this quarter?"</p>
+        <p>"What's food waste as a percentage of purchases by site this month, and which dishes are driving it?"</p>
+        <p>"Where's the gap between contracted supplier price and what we've actually been invoiced?"</p>
+        <p>"Which sites are over-ordering against covers forecast?"</p>
+        <p>"Show me COGS trending week by week by site. Who's slipping back above 25%?"</p>
+      </div>
     </div>
-    <div class="channel">
-      <h5><span class="tick">✓</span>TikTok</h5>
-      <p>Content performance and ad spend, reported the same way the platform reports it natively.</p>
-    </div>
-    <div class="channel">
-      <h5><span class="tick">✓</span>YouTube</h5>
-      <p>Views, retention and audience data pulled in alongside everything else, not checked separately.</p>
-    </div>
-    <div class="channel">
-      <h5><span class="tick">✓</span>Next to your trading data</h5>
-      <p>Marketing sits beside sales and covers, so spend can be read against what it actually delivered.</p>
-    </div>
-  </div>
 
-  <div class="sec-label" style="margin-bottom:14px">Questions the marketing team could ask on day one</div>
-  <div class="ask-list">
-    <p>"Which Instagram posts landed best last month, and at which sites?"</p>
-    <p>"Compare Meta and TikTok spend against covers for each restaurant this quarter."</p>
-    <p>"What did we spend per cover on paid social in June versus May?"</p>
-    <p>"Send each GM a Friday summary of their site's social performance and weekend trading."</p>
+    <div class="qcat">
+      <div class="qcat-head"><h4>EPOS &amp; margin</h4><span>trading, labour and the P&amp;L</span></div>
+      <div class="ask-list">
+        <p>"What's average spend per cover by site, trending against last quarter?"</p>
+        <p>"Break down revenue by payment type across all four sites this month."</p>
+        <p>"Show me void and discount rates by site and by staff member. Where's the biggest gap?"</p>
+        <p>"What are our busiest hours and days by site, and does that line up with how we've rota'd labour?"</p>
+        <p>"Which dishes are high volume but low margin, and which are the reverse?"</p>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -350,7 +361,7 @@ tbody tr:last-child td{border-bottom:none}
       <div class="chat-msgs" id="chatMsgs">
         <div class="msg msg-m">
           <div class="av">M</div>
-          <div class="bub">Connected across trading, finance and marketing. Pick a category above to see what a typical answer looks like.</div>
+          <div class="bub">Connected across marketing, EPOS, supplier costs and finance. Pick a category above to see what a typical answer looks like.</div>
         </div>
       </div>
       <div class="chat-foot">
@@ -360,7 +371,7 @@ tbody tr:last-child td{border-bottom:none}
         </button>
       </div>
     </div>
-    <p class="demo-note">Figures shown are illustrative placeholders using Camino's four London sites — not Camino data.</p>
+    <p class="demo-note">Figures shown are illustrative placeholders across Camino's four London sites, not Camino data.</p>
   </div>
 </section>
 
@@ -368,35 +379,76 @@ tbody tr:last-child td{border-bottom:none}
 <div class="section reveal" style="padding-top:0">
   <div class="sec-label">How It Reaches People</div>
   <div class="sec-title display">Milo meets the team where they already are.</div>
-  <div class="sec-sub">Same data, no new logins, no adoption battle. Each group gets what's relevant to them, in the channel they already check.</div>
+  <div class="sec-sub">Same data, no new logins, no adoption battle. Each group gets what is relevant to them, in the channel they already check.</div>
   <div class="delivery">
-    <div class="d-card"><h5><span class="d-dot"></span>GMs · WhatsApp</h5><p>Their site's numbers, pushed on a schedule. No login, no dashboard.</p></div>
-    <div class="d-card"><h5><span class="d-dot"></span>Finance · Slack</h5><p>Ask follow-up questions in the channel and get the working shown.</p></div>
-    <div class="d-card"><h5><span class="d-dot"></span>Owners &amp; investors · Email</h5><p>Automated packs on a set cadence, without anyone compiling them.</p></div>
-    <div class="d-card"><h5><span class="d-dot"></span>Head office · Web &amp; desktop</h5><p>The full view for deeper digging when someone wants to go further.</p></div>
+    <div class="d-card"><h5><span class="d-dot"></span>GMs on WhatsApp</h5><p>Their site's revenue, covers and labour, pushed on a schedule. No login, no dashboard.</p></div>
+    <div class="d-card"><h5><span class="d-dot"></span>Finance on Slack</h5><p>Ask follow-up questions in the channel and get the working shown alongside the number.</p></div>
+    <div class="d-card"><h5><span class="d-dot"></span>Owners &amp; investors by email</h5><p>Automated packs on a set cadence, without anyone compiling them by hand.</p></div>
+    <div class="d-card"><h5><span class="d-dot"></span>Head office on web &amp; desktop</h5><p>The full view for deeper digging when someone wants to go further.</p></div>
   </div>
 </div>
 
-<!-- ── COMPARISON ── -->
-<div class="section reveal" style="padding-top:0">
+<!-- ── TRUST & SECURITY ── -->
+<section id="trust">
+  <div class="section reveal">
+    <div class="sec-label">Trust &amp; Security</div>
+    <div class="sec-title display">Where Milo and Tenzo genuinely differ.</div>
+    <div class="sec-sub">For an FD, tooling has to clear the security bar before anything else matters. This is the clearest, most concrete gap between the two, and it is all in writing.</div>
+
+    <div class="trust-grid">
+      <div class="trust-card milo">
+        <h4>Milo</h4>
+        <div class="who">Independently certified</div>
+        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>SOC 2 Type II</strong><span>Independently audited controls over security and availability</span></span></div>
+        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>ISO 27001</strong><span>Certified information security management system</span></span></div>
+        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>GDPR compliant</strong><span>UK and EU data protection</span></span></div>
+        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>Read-only connections, role-based access</strong><span>Milo reads your data, never writes to it, and each person sees only their remit</span></span></div>
+        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>Public trust centre</strong><span>Certifications, sub-processors and policies, available to review now</span></span></div>
+      </div>
+
+      <div class="trust-card tenzo">
+        <h4>Tenzo</h4>
+        <div class="who">Publicly published standards</div>
+        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>SOC 2 Type II</strong><span>Not published on gotenzo.com</span></span></div>
+        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>ISO 27001</strong><span>Not published on gotenzo.com</span></span></div>
+        <div class="cert"><span class="mark yes">✓</span><span class="ct"><strong>GDPR</strong><span>Referenced in the site footer</span></span></div>
+        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>Access model</strong><span>Not publicly detailed</span></span></div>
+        <div class="cert faded"><span class="mark no">–</span><span class="ct"><strong>Trust centre</strong><span>None found publicly</span></span></div>
+      </div>
+    </div>
+
+    <div class="trust-cta">
+      <div class="trust-cta-txt">
+        <strong>See it for yourself</strong>
+        <p>Every certification above is documented and available to your team.</p>
+      </div>
+      <a class="trust-btn" href="https://milo.ai" target="_blank" rel="noopener">View Milo's Trust Centre →</a>
+    </div>
+
+    <p class="trust-note">Comparison reflects what each company publishes publicly on its own website (gotenzo.com) as of July 2026. It describes published information, not a statement about Tenzo's internal controls. Note there is a separate, unrelated company at tenzo.ai in AI recruiting; the hospitality analytics product is Tenzo at gotenzo.com.</p>
+  </div>
+</section>
+
+<!-- ── AT A GLANCE ── -->
+<div class="section reveal">
   <div class="sec-label">At a Glance</div>
   <div class="sec-title display">Milo alongside the current setup.</div>
-  <div class="sec-sub">Based on what we discussed in the room — worth checking against your own experience of Tenzo.</div>
+  <div class="sec-sub">Based on what we discussed in the room, and worth checking against your own experience of Tenzo.</div>
   <div class="cmp-wrap">
     <div class="cmp-scroll">
       <table>
         <thead><tr>
-          <th style="width:30%">Capability</th>
-          <th style="width:34%">Tenzo</th>
-          <th class="mc" style="width:36%">Milo</th>
+          <th style="width:26%">Capability</th>
+          <th style="width:36%">Tenzo</th>
+          <th class="mc" style="width:38%">Milo</th>
         </tr></thead>
         <tbody>
           <tr><td class="fc">Interface</td><td>Dashboards and set reports</td><td class="mc">Ask in plain English, like ChatGPT or Claude</td></tr>
-          <tr><td class="fc">Marketing data</td><td>Outside its scope</td><td class="mc">Meta, Instagram, TikTok, YouTube</td></tr>
-          <tr><td class="fc">Operational data</td><td>Core strength — sales, covers, labour</td><td class="mc">Covered, and joined to marketing and finance</td></tr>
-          <tr><td class="fc">Delivery</td><td>Log in to view</td><td class="mc">Slack, WhatsApp, email and web — automated</td></tr>
+          <tr><td class="fc">Marketing tied to revenue</td><td>Marketing sits outside its scope</td><td class="mc">Spend joined to covers and revenue, by campaign and site</td></tr>
+          <tr><td class="fc">Operational data</td><td>Core strength: sales, covers, labour</td><td class="mc">Covered, and joined to marketing and finance</td></tr>
+          <tr><td class="fc">Cost and margin</td><td>Sales and labour focused</td><td class="mc">Supplier prices, food waste and COGS creep, flagged early</td></tr>
+          <tr><td class="fc">Delivery</td><td>Log in to view</td><td class="mc">Slack, WhatsApp, email and web, automated</td></tr>
           <tr><td class="fc">Onboarding</td><td>Training required</td><td class="mc">Familiar from day one</td></tr>
-          <tr><td class="fc">Published security standards</td><td>Publicly references GDPR</td><td class="mc">SOC 2 Type II, ISO 27001 and GDPR — full trust documentation available on request</td></tr>
         </tbody>
       </table>
     </div>
@@ -410,26 +462,26 @@ tbody tr:last-child td{border-bottom:none}
   <div class="ns-grid">
     <div class="ns-col milo">
       <h3><span class="ns-dot"></span>Liam · Milo</h3>
-      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Send the trust &amp; security document</strong> covering data handling, access control and compliance</p></div>
-      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Share the marketing analytics walkthrough</strong> — short, aimed at the marketing team rather than finance</p></div>
-      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Diarise a check-in</strong> for when the timing is better, and stay out of the way until then</p></div>
+      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Send the trust centre and security pack</strong> covering SOC 2 Type II, ISO 27001, GDPR and how connections are secured</p></div>
+      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Set up a walkthrough on a comparable stack</strong> showing spend to revenue, supplier costs and EPOS in one place, marketing director welcome</p></div>
+      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Share a short set of example answers</strong> mapped to the questions your board keeps asking</p></div>
     </div>
     <div class="ns-col camino">
       <h3><span class="ns-dot"></span>Tyrone · Camino</h3>
-      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Review the trust document</strong> and flag anything that needs covering off internally</p></div>
-      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Point us to the marketing lead</strong> if the social reporting gap is worth a separate conversation</p></div>
-      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Come back to us when it suits</strong> — no pressure in the meantime</p></div>
+      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Review the trust centre</strong> and pass the security pack to whoever signs off tooling</p></div>
+      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Bring the marketing director into the next conversation</strong> so we can show spend joined to covers and revenue, not vanity metrics</p></div>
+      <div class="ns-item"><div class="ns-check">✓</div><p><strong>Tell us the three questions</strong> you most want answered faster, and we'll point Milo at them</p></div>
     </div>
   </div>
 </div>
 
 <!-- ── CTA ── -->
 <section id="cta" class="reveal">
-  <h2 class="display">When the timing's right,<br>we'll pick it straight back up.</h2>
-  <p class="lead">Thanks for the time, Tyrone. Anything you want covering off in the meantime — security, integrations, or the marketing side — just ask.</p>
-  <a class="cta-btn" href="mailto:liam@milo.ai?subject=Milo%20%C3%97%20Camino">Get in touch</a>
+  <h2 class="display">See it answer your questions,<br>not ours.</h2>
+  <p class="lead">Thirty minutes on a comparable stack, with your marketing director in the room if that helps. We'll show marketing spend joined to revenue, and the same across supply chain and EPOS.</p>
+  <a class="cta-btn" href="mailto:liam@milo.ai?subject=Milo%20for%20Camino%20Restaurants">Book a walkthrough</a>
   <p class="contact-line">Liam Rabone · <a href="mailto:liam@milo.ai">liam@milo.ai</a> · 21 July 2026</p>
-  <p class="footer-mark">Milo is an Autonomous Minds product &nbsp;·&nbsp; SOC 2 &nbsp;·&nbsp; ISO 27001 &nbsp;·&nbsp; GDPR</p>
+  <p class="footer-mark">Milo is an Autonomous Minds product &nbsp;·&nbsp; SOC 2 Type II &nbsp;·&nbsp; ISO 27001 &nbsp;·&nbsp; GDPR</p>
 </section>
 
 <script>
@@ -449,20 +501,20 @@ tbody tr:last-child td{border-bottom:none}
 (function(){
   const el=document.getElementById('h1');
   let d=.25;
-  'Good conversation.'.split(' ').forEach(w=>{
+  'Marketing spends it.'.split(' ').forEach(w=>{
     const s=document.createElement('span');s.className='w';s.textContent=w;
     s.style.animationDelay=d+'s';el.appendChild(s);d+=.11;
   });
   el.appendChild(document.createElement('br'));
-  'Wrong moment.'.split(' ').forEach((w,i)=>{
+  'Milo shows what it made.'.split(' ').forEach((w,i)=>{
     const s=document.createElement('span');s.className='w hl';s.textContent=w;
-    s.style.animationDelay=(d+.18+i*.1)+'s';el.appendChild(s);
+    s.style.animationDelay=(d+.18+i*.09)+'s';el.appendChild(s);
   });
 })();
 
 /* ── TICKER ── */
 (function(){
-  const items=['Plain-English questions','Meta · Instagram · TikTok · YouTube','Slack, WhatsApp & email delivery','No dashboard training','Automations to GMs and owners','Read-only connections','Marketing next to trading data','Live in days'];
+  const items=['Ad spend to revenue','Return per campaign','Supplier price rises','Food waste by site','COGS by site','Spend per cover','Void and discount rates','Labour against covers','Margin by dish','Automations to GMs and owners'];
   const t=document.getElementById('ticker');
   [...items,...items].forEach(txt=>{
     const s=document.createElement('span');s.className='ticker-item';
@@ -473,21 +525,21 @@ tbody tr:last-child td{border-bottom:none}
 /* ── CHAT DEMO ── */
 (function(){
   const demos=[
-    {label:'MARKETING',
-     q:'How did paid social perform against covers last month, by site?',
-     ans:'Shoreditch got the most out of paid social last month — spend was up 12% and covers followed. Monument spent similarly but saw almost no movement, which is worth a look before the next push. Farringdon is the efficiency winner on cost per cover.',
-     chart:[{l:'Shoreditch',p:91,d:'+18%',pos:true},{l:'Farringdon',p:78,d:'+11%',pos:true},{l:"King's Cross",p:62,d:'+4%',pos:true},{l:'Monument',p:34,d:'−2%',pos:false}]},
-    {label:'TRADING',
-     q:'Give me last week across all four sites — revenue, covers and variance vs. last year.',
-     ans:'Revenue across the four sites came in ahead of the same week last year, with covers up slightly more than spend — average spend per head has softened a touch. Shoreditch and Farringdon carried the week; Monument was flat.',
-     chart:[{l:'Shoreditch',p:88,d:'+14%',pos:true},{l:'Farringdon',p:80,d:'+9%',pos:true},{l:"King's Cross",p:66,d:'+3%',pos:true},{l:'Monument',p:49,d:'−1%',pos:false}]},
-    {label:'MARGIN',
-     q:'Where are we losing margin this month? Break it down.',
-     ans:'Labour is the main drag, running above budget at two sites. Food cost is within range across the group. Wet margin is holding up well and is the one line moving in the right direction.',
-     chart:[{l:'Labour',p:74,d:'−1.8pts',pos:false},{l:'Utilities',p:38,d:'−0.6pts',pos:false},{l:'Food cost',p:14,d:'−0.1pts',pos:false},{l:'Wet margin',p:84,d:'+0.5pts',pos:true}]},
+    {label:'REVENUE',
+     q:'What did we spend on paid social last month by site, and what revenue can we tie back to it?',
+     ans:'Across the four sites you spent broadly the same on paid social, but the return split widely. Shoreditch turned it into the most traceable revenue through the booking link and promo code. Monument spent in line with the others and saw very little move, which is worth a look before the next push.',
+     chart:[{l:'Shoreditch',p:92,d:'4.1x',pos:true},{l:'Farringdon',p:74,d:'3.2x',pos:true},{l:"King's Cross",p:58,d:'2.4x',pos:true},{l:'Monument',p:28,d:'0.9x',pos:false}]},
+    {label:'SUPPLY CHAIN',
+     q:'Which suppliers have pushed prices up most on our top ingredients this quarter?',
+     ans:'Three suppliers account for most of the movement. Produce is the biggest driver, up on several lines at once. Wine and dry goods are broadly flat. At current volumes that is adding a noticeable amount to COGS this quarter, concentrated at the two busiest sites.',
+     chart:[{l:'Produce',p:84,d:'+11%',pos:false},{l:'Meat &amp; fish',p:61,d:'+7%',pos:false},{l:'Dairy',p:44,d:'+4%',pos:false},{l:'Wine',p:16,d:'+1%',pos:false}]},
+    {label:'EPOS',
+     q:"What's average spend per cover by site, trending against last quarter?",
+     ans:'Spend per cover is up at three of the four sites versus last quarter, with wine and sides doing most of the lifting. King’s Cross has softened slightly, driven by a shift toward the set menu at lunch. Worth testing a sides prompt at the point of order there.',
+     chart:[{l:'Shoreditch',p:88,d:'+6%',pos:true},{l:'Farringdon',p:80,d:'+4%',pos:true},{l:'Monument',p:70,d:'+2%',pos:true},{l:"King's Cross",p:46,d:'−1%',pos:false}]},
     {label:'AUTOMATION',
      q:'Every Friday at 4pm, send each GM their site summary on WhatsApp.',
-     ans:"Set up. Each GM will get their own site's revenue, covers, labour percentage and social performance for the week, every Friday at 4pm on WhatsApp. Owners get the consolidated version by email at the same time. You can change the cadence or the content any time by asking.",
+     ans:'Done. Each GM will get their own site’s revenue, covers, labour percentage and paid social return for the week, every Friday at 4pm on WhatsApp. Owners and investors get the consolidated version by email at the same time. Ask any time to change the cadence or what is in it.',
      chart:null},
   ];
 
@@ -521,7 +573,7 @@ tbody tr:last-child td{border-bottom:none}
         cv.style.cssText='background:#fbfbf5;border:1px solid #e0e0d3;border-radius:3px 14px 14px 14px;padding:13px 14px;max-width:88%';
         demos[i].chart.forEach((r,idx)=>{
           const row=document.createElement('div');row.className='bar-row';
-          row.innerHTML=`<div class="b-label">${esc(r.l)}</div><div class="b-track"><div class="b-fill ${r.pos?'pos':'neg'}" style="--w:${r.p}%;animation-delay:${idx*.07}s"></div></div><div class="b-delta ${r.pos?'p':'n'}">${esc(r.d)}</div>`;
+          row.innerHTML=`<div class="b-label">${r.l}</div><div class="b-track"><div class="b-fill ${r.pos?'pos':'neg'}" style="--w:${r.p}%;animation-delay:${idx*.07}s"></div></div><div class="b-delta ${r.pos?'p':'n'}">${r.d}</div>`;
           cv.appendChild(row);
         });
         cw.appendChild(cv);msgs.appendChild(cw);
